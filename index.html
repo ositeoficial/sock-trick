@@ -185,20 +185,7 @@
     </div>
 </section><<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
-  <script type="text/javascript">
-function bemobCb(params) {
-    var t = params.trackingDomain+'/click/';
-    var re = new RegExp(t+'?(\\d*)');
-    var e = document.querySelectorAll('a[href*="'+t+'"]');
-    for (var i = 0; i < e.length; i++) {
-        var ex = re.exec(e[i].href);
-        if (ex) {
-            e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
-        }
-    }
-}
-</script>
-<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://iig0p.bemobtrcks.com/landing/78397d91-b7c6-4b36-abb7-2ba36a153dd9?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://iig0p.bemobtrcks.com/landing/78397d91-b7c6-4b36-abb7-2ba36a153dd9?rule=1&path=1&landing=1" alt=""></noscript>
+ 
 
 <!-- Meta Pixel Code -->
 <script>
