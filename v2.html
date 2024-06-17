@@ -3,6 +3,8 @@
 <head>
   <!-- Site made with Mobirise Website Builder v5.8.14, https://mobirise.com -->
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v5.8.14, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -24,6 +26,12 @@
   
 </head>
 <body>
+  <div class="image-container">
+        <a href="https://www.seulink.com" id="centeredImage">
+            <img src="assets/images/cta-1-minute-sock-trick.png" alt="Imagem Central">
+        </a>
+    </div>
+    <script src="script.js"></script>
   
   <section data-bs-version="5.1" class="content4 cid-u5SGi5NMAk" id="content4-0">
     
@@ -217,7 +225,48 @@ function bemobCb(params) {
   <img height="1" width="1" style="display:none"
        src="https://www.facebook.com/tr?id=1358936945008604&ev=Purchase&noscript=1"/>
 </noscript>
+<style>body, html {
+    margin: 0;
+    padding: 0;
+    height: 200%;
+    overflow-x: hidden;
+}
 
+.image-container {
+    position: fixed;
+    left: 50%;
+    bottom: -300px; /* Começa fora da tela */
+    transform: translateX(-50%);
+    transition: bottom 1s;
+    z-index: 1000;
+}
+
+.image-container.show {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+</style>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    const imageContainer = document.querySelector('.image-container');
+
+    // Adiciona a classe para mostrar a animação
+    setTimeout(() => {
+        imageContainer.classList.add('show');
+    }, 1000);
+
+    // Mantém a imagem no centro ao rolar a página
+    window.addEventListener('scroll', () => {
+        imageContainer.style.bottom = '50%';
+        imageContainer.style.transform = 'translate(-50%, 50%)';
+    });
+});
+</script>
 
   <meta http-equiv="delegate-ch" content="sec-ch-ua https://iig0p.bemobtrcks.com; sec-ch-ua-mobile https://iig0p.bemobtrcks.com; sec-ch-ua-arch https://iig0p.bemobtrcks.com; sec-ch-ua-model https://iig0p.bemobtrcks.com; sec-ch-ua-platform https://iig0p.bemobtrcks.com; sec-ch-ua-platform-version https://iig0p.bemobtrcks.com; sec-ch-ua-bitness https://iig0p.bemobtrcks.com; sec-ch-ua-full-version-list https://iig0p.bemobtrcks.com; sec-ch-ua-full-version https://iig0p.bemobtrcks.com">
   
